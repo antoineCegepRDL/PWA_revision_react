@@ -14,8 +14,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-size: contain;
-  background: url('background.jpg') center /500px;
+  background: url('background.jpg') no-repeat center center fixed;
 }
 
 .fill-height {

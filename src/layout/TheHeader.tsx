@@ -8,7 +8,7 @@ function TheHeader() {
       <div>
         <ul className="flex-between">
           <Link to="/">Home</Link>
-          {Array.from({ length: 3 }, (_, i) => (
+          {Array.from({ length: 1 }, (_, i) => (
               <Link to={`/exercice${i + 1}`} key={i}>Exercice {i + 1}</Link>
           ))}
         </ul>

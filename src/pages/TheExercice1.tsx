@@ -1,17 +1,17 @@
-import '../style/Layout.scss'
-import '../style/button1.scss'
-import AFunkyButton from '../components/AFunkyButton'
 
 const TheExercice1 = () => {
+  let clicks = 0;
+  const handleClick = () => {
+    alert("Vous avez cliqué!")
+    clicks++;
+  };
   return (
     <>
-      <h2>Premier défi</h2>
-      <p>Nous allons nous créer un bouton custom.</p>
-      <p>Quand on clique sur le bouton, je veux que tu affiches le message : "WRAR!"</p>
-      <p>Pour ajouter un événement au clic, nous allons utiliser une fonction. comme ceci <code> onClick: () =&gt; void;</code></p>
-      <p>Tu as un exemple dans le readme</p>
+      <h2>Use state</h2>
+      <p>Tu te souviens de useState? Va sur ce site web pour garder une trace du nombre de clics.</p>
       <div className="ex1">
-        <AFunkyButton/>
+        <button onClick={handleClick}>Clique-moi!</button>
+        <p>Nombre de clics: {clicks}</p>
       </div>
     </>
   )
